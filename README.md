@@ -6,3 +6,6 @@ P制御により目標温度値へと制御する。(PID制御しようとした
 目標温度値は20℃前後が目安。
 
 回路設計はフリーの回路設計ソフトであるKiCad(version5.1.10)によって設計した。version6.0以降だと仕様の変更に伴い回路図が変化する可能性有。
+
+
+[Thermal Controller.pdf](https://github.com/TomuYamamoto/Thermal-Controller/files/7824573/Thermal.Controller.pdf)
