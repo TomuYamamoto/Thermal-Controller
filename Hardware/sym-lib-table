@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Themal_Controller)(type Legacy)(uri "${KIPRJMOD}/Themal Controller.lib")(options "")(descr ""))
+  (lib (name Thermal-Controller-rescue)(type Legacy)(uri "${KIPRJMOD}/Thermal Controller-rescue.lib")(options "")(descr ""))
+)
