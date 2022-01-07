@@ -10,4 +10,4 @@ P制御により目標温度値へと制御する。(PID制御しようとした
 冷却はヒートシンクにDCファンをつなげている。DCファンの制御をするかどうかはご自由に。
 
 
-![Thermal Controller](https://user-images.githubusercontent.com/93374196/148498148-92441396-9c61-4275-9920-e6c98204104e.jpg)
+![Thermal Controller](https://user-images.githubusercontent.com/93374196/148498220-b58d6bbe-aec4-4f98-9a2a-b182b1bba5f3.jpg)
