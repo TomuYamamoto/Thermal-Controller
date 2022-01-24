@@ -9,8 +9,8 @@
 #include <math.h>
 
 #define TempPin A0          // アナログ入力ピン0番
-#define PWM_Peltier1 3      // PWM出力ピン D5
-#define PWM_Peltier2 4      // PWM出力ピン D6
+#define PWM_Peltier1 3      // PWM出力ピン D3
+#define PWM_Peltier2 4      // PWM出力ピン D4
 #define Kp 100
 #define Ki 1
 #define Kd 1
