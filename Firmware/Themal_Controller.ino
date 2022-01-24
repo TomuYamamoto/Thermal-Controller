@@ -9,12 +9,12 @@
 #include <math.h>
 
 #define TempPin A0          // アナログ入力ピン0番
-#define PWM_Peltier1 5      // PWM出力ピン D5
-#define PWM_Peltier2 6      // PWM出力ピン D6
+#define PWM_Peltier1 3      // PWM出力ピン D5
+#define PWM_Peltier2 4      // PWM出力ピン D6
 #define Kp 100
 #define Ki 1
 #define Kd 1
-#define target 30           //制御目標
+#define target 20           //制御目標
 
 float temp = 0;
 uint8_t out[2] = {0};
@@ -70,19 +70,18 @@ void loop() {
 
   k = k / 10.0;
 
-  aa = Kp * (target - k) + 100;
-  if(aa > 0) aa += 50;
+  aa = Kp * (k - target) + 100;
 
   if(aa > 255)  aa = 255;
   if(aa < -255) aa = -255;
 
-  if((target - k) < 0){
-    aaa[0] = aa * (-1);
+  if((k - target) > 0){
+    aaa[0] = aa;
     aaa[1] = 0;
   }
-  if((target - k) >= 0){
+  if((k - target) <= 0){
     aaa[0] = 0;
-    aaa[1] = aa;
+    aaa[1] = aa * (-1);
     aa = 0;
   }
     
@@ -105,6 +104,8 @@ void loop() {
   Serial.print(temp); //温度をシリアル出力
   Serial.print("\t");
   Serial.print(k);
+  Serial.print("\t");
+  Serial.print(aa);
   Serial.print("\n");
   //Serial.print("\r");
   delay(100);
