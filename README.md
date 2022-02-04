@@ -12,9 +12,9 @@ P制御により目標温度値へと制御する。(PID制御しようとした
 電源について、ペルチェ素子は安定化電源などを用いて12V（最大定格15.4V、6.0A）を、Arduino Uno Rev3にはDCジャックに接続する。
 （使用ペルチェ：https://akizukidenshi.com/catalog/g/gI-00485/ ）
 
-排熱はヒートシンクとDCファンを使用。DCファンの制御をするかどうかはご自由に。制御しないなら5Vピンにつなげるだけ。
+排熱はヒートシンクとDCファンを使用。DCファンの制御はせずにそのまま5Vを接続している。
+
+改善案としてはLCDを用いたモニタリング、DCファンの制御などを考える。
 
 
-![Thermal Controller](https://user-images.githubusercontent.com/93374196/148498312-875e0447-890c-46a1-96a4-8ddcfb0f29f7.jpg)
-
-
+![Thermal Controller](https://user-images.githubusercontent.com/93374196/152501736-9cf6e86d-8439-4cac-addf-0bc70f1e0d59.jpg)
