@@ -156,7 +156,7 @@ Wire Wire Line
 NoConn ~ 1200 1400
 Text Notes 550  650  0    50   ~ 0
 Arduino Uno Rev3\n
-Text Notes 2950 2350 0    50   ~ 0
+Text Notes 2950 2250 0    50   ~ 0
 Peltier\n
 Text Notes 2900 600  0    50   ~ 0
 Thermistor\n
